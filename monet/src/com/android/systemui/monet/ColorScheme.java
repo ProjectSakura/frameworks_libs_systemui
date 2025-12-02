@@ -110,6 +110,11 @@ public class ColorScheme {
     public ColorScheme(@ColorInt int seed, boolean darkTheme, @Style.Type int style) {
         this(seed, darkTheme, style, 0.0);
     }
+    public ColorScheme(@ColorInt int seed, boolean isDark, @Style.Type int style,
+        double contrastLevel, float luminanceFactor, float chromaFactor,
+        boolean wholePalette, boolean tintBg, Integer bgColor) {
+    this(seed, isDark, style, contrastLevel);
+    }
 
     public ColorScheme(WallpaperColors wallpaperColors, boolean darkTheme, @Style.Type int style) {
         this(getSeedColor(wallpaperColors, style != Style.CONTENT), darkTheme, style);
