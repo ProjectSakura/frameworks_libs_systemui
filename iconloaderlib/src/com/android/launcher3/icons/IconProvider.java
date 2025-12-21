@@ -346,7 +346,7 @@ public class IconProvider implements ResourceBasedOverride {
                 return null;
             }
             Drawable d = mResources.getDrawable(mResID).mutate();
-            d = new InsetDrawable(d, 0.28f);
+            d = new InsetDrawable(d, 0.26f);
             return d;
         }
     }
